@@ -22,20 +22,6 @@ for ( let i = 0, splideLength = splides.length; i < splideLength; i++ ) {
       autoScroll: false,
     },
    },
-  breakpoints: {
-     1320: {
-      perPage: 5,
-		},
-    1080: {
-      perPage: 4,
-		},
-    992: {
-      perPage: 3.5,
-		},
-    780: {
-      destroy: true,
-		},
-   }
 } ).mount( window.splide.Extensions );
 }
 
