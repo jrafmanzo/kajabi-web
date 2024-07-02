@@ -1,6 +1,8 @@
 function banner() {
   let splides = document.querySelectorAll('#banner');
   for (let i = 0, splideLength = splides.length; i < splideLength; i++) {
+    splides[i].style.display = 'block'; // Ensure the element is visible
+
     new Splide(splides[i], {
       perPage: 6,
       arrows: false,
