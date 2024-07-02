@@ -1,4 +1,3 @@
-<script>
 function banner() {
 
 let splides = $('#banner');
@@ -36,4 +35,3 @@ for ( let i = 0, splideLength = splides.length; i < splideLength; i++ ) {
 
 }
 banner();
-</script>
