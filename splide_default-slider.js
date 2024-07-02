@@ -1,18 +1,19 @@
-function logos() {
+<script>
+function banner() {
 
-let splides = $('#logos');
+let splides = $('#banner');
 for ( let i = 0, splideLength = splides.length; i < splideLength; i++ ) {
 	new Splide( splides[ i ], {
-  perPage: 5,
+  perPage: 6,
   arrows: false,
   pagination: false,
   focus: 'center',
   direction: 'ltr',
-  gap: '1.5rem',
+  gap: '1rem',
   type: 'loop',
   autoScroll: {
     autoStart: true,
-    speed: 0.8,
+    speed: 0.6,
   },
   intersection: {
     inView: {
@@ -22,8 +23,17 @@ for ( let i = 0, splideLength = splides.length; i < splideLength; i++ ) {
       autoScroll: false,
     },
    },
+  breakpoints: {
+     1320: {
+      perPage: 5,
+		},
+    1080: {
+      perPage: 4,
+		},
+   }
 } ).mount( window.splide.Extensions );
 }
 
 }
-logos();
+banner();
+</script>
