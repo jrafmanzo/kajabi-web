@@ -1,7 +1,7 @@
 var defaultSwiper = new Swiper ('#swiper-default', {
  	loop: true,
    loopFillGroupWithBlank: true,
-  slidesPerView: 1.75,
+  slidesPerView: 1.875,
   slidesPerGroup: 4,
   grabCursor:true,
   a11y: false,
@@ -28,7 +28,7 @@ var defaultSwiper = new Swiper ('#swiper-default', {
         spaceBetween: 28,
       },
       992: { /* when window >= 988px - webflow desktop */
-         slidesPerView: 1.75,
+         slidesPerView: 1.875,
          slidesPerGroup:1,
         spaceBetween: 28,
       }
