@@ -10,6 +10,12 @@ $(document).ready(function() {
     // Displaying the sum
     $('#sumResult').text('Total Sum: ' + sum);
 
+    // Hide all plan selectors
+    $('.plan-selector_kickstarter').addClass('hide');
+    $('.plan-selector_basic').addClass('hide');
+    $('.plan-selector_growth').addClass('hide');
+    $('.plan-selector_pro').addClass('hide');
+
     // Conditionally show plan selectors based on the sum
     if (sum < 5) {
       $('.plan-selector_kickstarter').removeClass('hide');
