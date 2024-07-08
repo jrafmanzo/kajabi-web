@@ -13,11 +13,11 @@ $(document).ready(function() {
     // Conditionally show plan selectors based on the sum
     if (sum < 5) {
       $('.plan-selector_kickstarter').removeClass('hide');
-    } else if (sum >= 5 && sum <= 9) {
+    } else if (sum >= 6 && sum <= 9) {
       $('.plan-selector_basic').removeClass('hide');
     } else if (sum >= 10 && sum <= 13) {
       $('.plan-selector_growth').removeClass('hide');
-    } else if (sum > 13) {
+    } else if (sum > 14) {
       $('.plan-selector_pro').removeClass('hide');
     }
   });
