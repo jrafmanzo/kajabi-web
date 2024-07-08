@@ -22,3 +22,16 @@ $(document).ready(function() {
     }
   });
 });
+
+$(document).ready(function() {
+  $('#pricing-toggle-checkbox').change(function() {
+    if ($(this).is(':checked')) {
+      // Set the annual tab active
+      $('#pricing-tabs').find('a[href="#pricing-tabs-annual"]').tab('show');
+    } else {
+      // Set the monthly tab active
+      $('#pricing-tabs').find('a[href="#pricing-tabs-monthly"]').tab('show');
+    }
+  });
+});
+
