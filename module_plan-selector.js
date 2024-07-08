@@ -11,14 +11,14 @@ $(document).ready(function() {
     $('#sumResult').text('Total Sum: ' + sum);
 
     // Conditionally show plan selectors based on the sum
-if (sum < 5) {
-  $('.plan-selector_kickstarter').removeClass('hide');
-} else if (sum >= 5 && sum <= 9) {
-  $('.plan-selector_basic').removeClass('hide');
-} else if (sum >= 10 && sum <= 13) {
-  $('.plan-selector_growth').removeClass('hide');
-} else if (sum >= 14) {
-  $('.plan-selector_pro').removeClass('hide');
-}
+    if (sum < 5) {
+      $('.plan-selector_kickstarter').removeClass('hide');
+    } else if (sum >= 5 && sum <= 9) {
+      $('.plan-selector_basic').removeClass('hide');
+    } else if (sum >= 10 && sum <= 13) {
+      $('.plan-selector_growth').removeClass('hide');
+    } else if (sum >= 14) {
+      $('.plan-selector_pro').removeClass('hide');
+    }
   });
 });
