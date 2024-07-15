@@ -7,8 +7,10 @@ $(document).ready(function() {
         // Create a modal if it doesn't already exist
         if ($('#enlarge-modal').length === 0) {
             $('body').append(`
-                <div id="enlarge-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; padding:10%; box-sizing:border-box; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; display:flex;">
-                    <img id="enlarged-image" class="rich-text-image" src="" style="max-width:80vw; max-height:80vh; width:auto; height:auto; margin:auto;">
+                <div id="enlarge-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); display:flex; justify-content:center; align-items:center; box-sizing:border-box; padding:10%;">
+                    <div style="max-width:80vw; max-height:70vh; overflow:auto; display:flex; justify-content:center; align-items:center;">
+                        <img id="enlarged-image" src="" style="max-width:100%; max-height:100%; width:auto; height:auto; margin:auto;">
+                    </div>
                 </div>
             `);
 
